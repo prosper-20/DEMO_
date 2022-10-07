@@ -21,7 +21,6 @@ from blog.sitemap import PostSitemap
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('blog/', include('blog.urls')),
-    path('sitemap.xml', sitemap, {'sitemaps': sitemaps},
-name='django.contrib.sitemaps.views.sitemap')
+    path('sitemap.xml', sitemap, {'sitemaps': sitemap}, name='django.contrib.sitemaps.views.sitemap')
     
 ]
